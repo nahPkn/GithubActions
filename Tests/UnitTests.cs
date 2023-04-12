@@ -7,7 +7,7 @@ namespace GithubActionsLab
     public class Math
     {
         [Test]
-        public void Add_Valid()
+        public void Add_ValidPhan()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
@@ -15,7 +15,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Invalid()
+        public void Add_InvalidPhan()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
@@ -23,7 +23,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Null()
+        public void Add_NullPhan()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -32,7 +32,7 @@ namespace GithubActionsLab
 
         // Implement 3 tests per operation, following a similar pattern as above
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_ValidPhan()
         {
             Assert.AreEqual(3, Program.Subtract("4", "1"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
@@ -40,7 +40,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_InvalidPhan()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -48,7 +48,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_NullPhan()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -56,7 +56,7 @@ namespace GithubActionsLab
         }
         [Test]
 
-        public void Divide_Valid()
+        public void Divide_ValidPhan()
         {
             Assert.AreEqual(2, Program.Divide("2", "1"));
             Assert.AreEqual(3, Program.Divide("6", "2"));
@@ -64,7 +64,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_InvalidPhan()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -72,7 +72,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_NullPhan()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -80,7 +80,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Valid()
+        public void Power_ValidPhan()
         {
             Assert.AreEqual(1, Program.Power("1", "2"));
             Assert.AreEqual(9, Program.Power("3", "2"));
@@ -88,7 +88,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_InvalidPhan()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -96,7 +96,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_NullPhan()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
